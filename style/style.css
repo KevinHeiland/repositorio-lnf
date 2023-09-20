@@ -1,0 +1,381 @@
+:root{
+    --color-fondo : #808080;
+    --fondo-logo : #1e2834;
+    --palabras-claras : #ced1d5;
+}
+
+.body {
+    background-color: var(--color-fondo);
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    font-size: 62,5%; /*para que un rem sea igual a 10px*/
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--fondo-logo); 
+    text-align: center;
+    width: 100%;
+}
+
+/* Estilos para el contenedor del header */
+.header-grid-container { 
+    align-items: center;  
+    height: 100%;
+}
+
+/* Estilos para el contenedor del logo y la lista de navegación */
+.header-grid {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+
+/* Estilos para la imagen del logo */
+.header-grid img {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 30rem; 
+    height: auto; 
+}
+
+.navbar {
+    text-align: center;
+    background-color: var(--fondo-logo);
+}
+
+.navbar .nav-item a {
+    color: var(--palabras-claras);
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+
+/* Estilos para el contenedor de la lista de navegación */
+.nav-list-grid-container {
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-self: flex-end;
+    position: sticky;
+    top: 0;
+}
+
+/* Estilos para la lista de navegación */
+.nav-list-grid {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 2px;
+    position: sticky;
+    top: 0;
+}
+
+/* Estilos para la lista*/
+.nav-list-grid ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+/* Estilos para cada elemento de la lista*/
+.nav-list-grid li {
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    display: inline-block;
+    margin: 3px 3rem; 
+    padding: 1rem;
+}
+
+.nav-list-grid li:hover {
+    background-color: #27364A;
+}
+
+/* Estilos para las palabras de la lista*/
+.nav-list-grid a {
+    text-decoration: none;
+    color: var(--palabras-claras);
+}
+
+/* estilo contenedor de imagen principal*/
+.imgs-grid-container {
+    size: 100%;
+    overflow: hidden;
+}
+
+/* estilo de la imagen*/
+.img-grid {
+    display: flex; 
+    flex-wrap: nowrap; 
+}
+
+/* configuracion de la imagen*/
+.img-grid img {
+    width: 100%; 
+    height: auto; 
+}
+
+/* Estilo del contenedor de los empleados*/
+.empleados-grid-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilo de la lista de empleados*/
+.empleados-list-grid ul {
+    display: flex;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Estilo de los elemento de la lista de empleados*/
+.empleados-list-grid li {
+    display: flex;
+    display: inline-block;
+    padding: 6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.empleados-list-grid img {
+    margin-bottom: 1rem;
+}
+
+/* Estilo contenedor del video*/
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+/* Estilo del video*/
+.video{
+    border: 1rem solid var(--fondo-logo);
+    text-align: center;
+}
+
+.custom-navbar {
+    background-color: var(--fondo-logo);
+    color: var(--fondo-logo);
+}
+
+.custom-navbar img{
+    padding-right: 1rem;
+}
+
+/* Estilo del texto que se encuentra en el mismo contenedor que el video*/
+.video-container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 10px 0;
+    margin-left:  4rem;
+}
+
+/* Estilos para el contenedor de productos */
+.productos-grid-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    background-color: var(--fondo-logo);
+}
+
+/* Estilo de la lista de productos*/
+.productos-grid-container li {
+    display: flex;
+    display: inline-block;
+    padding: 5rem;
+}
+
+.productos-grid-container .ver-mas{
+    border: 3px solid var(--fondo-logo);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+/* Estilos para cada producto */
+.productos-grid > li {
+    margin: 2rem;
+    margin-bottom: 0,5rem;
+}
+
+/* Estilos para las imágenes de los productos */
+.img-producto {
+    width: auto;
+    height: 15rem;
+    border: 1rem solid var(--color-fondo);
+}
+
+/* Estilos para los títulos de los productos */
+.productos-grid-container h3 {
+    margin-top: 2rem; 
+    color: var(--palabras-claras);
+    padding: 0.5rem;
+    background-color: var(--color-fondo);
+}
+
+/* Estilos para el enlace "Ver más" */
+.productos-grid-container a {
+    text-decoration: none;
+    color: var(--palabras-claras); 
+    margin-top: 10px; 
+    padding: 6px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+/* Estilo para el contenedor del mapa*/
+.map-grid-container {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilos para el contenedor del footer */
+.footer-grid-container {
+    position: relative;
+    left: 0;
+    width: 100%;
+    background-color: var(--fondo-logo); 
+    color: var(--palabras-claras);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: centrer;
+}
+
+/* Estilos para los enlaces en el footer */
+.footer-grid a {
+    display: block;
+    margin-bottom: 0px;
+    text-decoration: none;
+    color: var(--palabras-claras);
+    margin-left: 1rem;
+}
+
+/* Estilos para la imagen en el footer */
+.footer-grid img {
+    height: 1rem;
+    width: 12rem;
+    margin-right: 10px;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*Estilos seccion trabajos*/
+
+/*Estilo contenedo de la matriz*/
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "imagen1 texto1"
+    "texto2 imagen2"
+    "imagen3 texto3"
+    "texto4 imagen4"
+    "imagen5 texto5"
+    ;
+    height: 100vh;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.grid-container #imagen{
+    width: 100% ;
+    height: auto;
+}
+
+.grid-container p{
+    text-align: center;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.grid-container .img1{
+    grid-area: imagen1;
+}
+
+.grid-container .img2{
+    grid-area: imagen2;
+}
+
+.grid-container .img3{
+    grid-area: imagen3;
+}
+
+.grid-container .img4{
+    grid-area: imagen4;
+}
+
+.grid-container .img5{
+    grid-area: imagen5;
+}
+
+.grid-container .txt1 {
+    grid-area: texto1;
+}
+
+.grid-container .txt2 {
+    grid-area: texto2;
+}
+
+.grid-container .txt3 {
+    grid-area: texto3;
+}
+
+.grid-container .txt4 {
+    grid-area: texto4;
+}
+
+.grid-container .txt5 {
+    grid-area: texto5;
+}
+
+
+
+/*Agrego fuente para usar en los textos de la celda*/
+@font-face {
+    font-family: Raleway;
+    src: url(fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+/*Estilo de los parrafos de las celdas*/
+.grid-container p {
+    size: 100%;
+    text-align: center;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: larger;
+}
+
+        /*Fin estilos Trabajos*/
