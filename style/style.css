@@ -4,7 +4,7 @@
     --palabras-claras : #ced1d5;
 }
 
-.body {
+body {
     background-color: var(--color-fondo);
     scroll-behavior: smooth;
     min-height: 100vh;
@@ -38,8 +38,6 @@ header {
 .header-grid img {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    width: 30rem; 
-    height: auto; 
 }
 
 .navbar {

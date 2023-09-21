@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>proyecto-la-nueva-fusta</title>
     <!--enlazar bootrap con el html-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--archivo css-->
     <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
     <!--Header-->
     <header class="header-grid-container">
@@ -18,42 +20,60 @@
             <a href="index.html" class="img-fluid">
                 <img src="Imagenes/logo la nueva fustas.PNG" alt="logo img">
             </a>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon menu-white"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="Pages/Productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Pages/Trabajos.html">Trabajos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#nosotros">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#footer">Contactos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </section>
     </header>
     <!--Header-end-->
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon menu-white"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="Pages/Productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Pages/Trabajos.html">Trabajos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#nosotros">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#footer">Contactos</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-        
+
+
     <!--Carousel-->
     <section class="imgs-grid-containter">
-        <div class="img-grid">
-            <img src="Imagenes/vacas.jpg" alt="imagen de hacienda pastando">
-            <img src="" alt="">
-            <img src="" alt="">
-            <!--Todavia no se hacer un carousel-->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Imagenes/vacas.jpg" class="d-block w-100" alt="hacienda">
+                </div>
+                <div class="carousel-item">
+                    <img src="Imagenes/trigo.jpg" class="d-block w-100" alt="trigo">
+                </div>
+                <div class="carousel-item">
+                    <img src="Imagenes/patrio3.jpg" class="d-block w-100" alt="patio">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
     <!--Carrousel-end-->
@@ -61,16 +81,26 @@
     <!--empleados-->
     <section class="empleados-grid-container" id="nosotros">
         <ul class="empleados-list-grid">
-            <li> <img src="Imagenes/generica.png" alt="empleado1"> <h3>Pablo Heiland</h3> </li>
-            <li> <img src="Imagenes/generica.png" alt="empleado2"> <h3>Eduardo Heiland</h3> </li>
-            <li> <img src="Imagenes/generica.png" alt="empleado3"> <h3>Marcos Caracino</h3> </li>
+            <li> <img src="Imagenes/generica.png" alt="empleado1">
+                <h3>Pablo Heiland</h3>
+            </li>
+            <li> <img src="Imagenes/generica.png" alt="empleado2">
+                <h3>Eduardo Heiland</h3>
+            </li>
+            <li> <img src="Imagenes/generica.png" alt="empleado3">
+                <h3>Marcos Caracino</h3>
+            </li>
         </ul>
     </section>
     <!--end empleado-->
-    
+
     <!--video and h2-->
     <section class="video-container">
-        <iframe class="video" width="660" height="415" src="https://www.youtube.com/embed/cXMcQxENRPM?si=lZifpu8zbozpF78p&amp;autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="video" width="660" height="415"
+            src="https://www.youtube.com/embed/cXMcQxENRPM?si=lZifpu8zbozpF78p&amp;autoplay=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         <h2>Veterinaria <br> Electrificación rural <br> Alimentos balanceados <br>Semillas <br> Articulos varios</h2>
     </section>
     <!--end video and h2-->
@@ -106,7 +136,10 @@
     <!--mapa-->
     <section class="map-grid-container">
         <h3>Nos podes encontrar en nuestro local:</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.3917838380735!2d-58.73647618950171!3d-38.55900365278651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958f97bf1fdbcc1f%3A0x8acf53f54bd02157!2sLa%20Nueva%20Fusta!5e0!3m2!1ses-419!2sar!4v1691700935142!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.3917838380735!2d-58.73647618950171!3d-38.55900365278651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958f97bf1fdbcc1f%3A0x8acf53f54bd02157!2sLa%20Nueva%20Fusta!5e0!3m2!1ses-419!2sar!4v1691700935142!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <!--end mapa-->
 
@@ -117,13 +150,14 @@
             <a href="https://www.instagram.com/lanuevafusta/">Instagram: @LaNuevaFusta</a><br>
             <a href="tel:+54902262435544">Teléfono: +549(2262)43-5544</a>
         </div>
-            <img class="img-fluid" src="Imagenes/logo la nueva fustas.PNG" alt="logo img">
+        <img class="img-fluid" src="Imagenes/logo la nueva fustas.PNG" alt="logo img">
     </footer>
-    <!--end footer-->   
+    <!--end footer-->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
